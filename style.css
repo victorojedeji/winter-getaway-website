@@ -64,6 +64,14 @@ a {
     justify-content: space-around;
 }
 
+.nav ul li:nth-child(1)::after {
+    display: block;
+    width: 40%;
+    background: #ffffff;
+    height: .18rem;
+    margin: 0 auto;
+}
+
 .nav ul li {
     position: relative;
 }
@@ -424,5 +432,11 @@ footer div a {
 footer div a:hover {
     background: white;
     color: #000000;
+}
+
+/* media queries */
+
+@media screen (max-width ) {
+    
 }
 
