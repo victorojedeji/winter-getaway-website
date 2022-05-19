@@ -64,13 +64,21 @@ a {
     justify-content: space-around;
 }
 
-.nav ul li:nth-child(1)::after {
+.active {
+    position: relative;
+}
+
+.active::after {
+    content: "";
     display: block;
     width: 40%;
+    position: absolute;
     background: #ffffff;
     height: .18rem;
-    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
 }
+
 
 .nav ul li {
     position: relative;
@@ -117,8 +125,6 @@ a {
 .translation p {
     writing-mode: vertical-lr;
 }
-
-
 
 .social-container ul {
     display: flex;
